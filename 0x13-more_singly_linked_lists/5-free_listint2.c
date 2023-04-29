@@ -1,10 +1,8 @@
 #include "lists.h"
 
 /**
- * free_listint2 - frees a listint_t list and sets the head to NULL
- * @head: double pointer to the head of the list
- *
- * Return: void
+ * free_listint2 - frees a listint_t list and sets head to NULL
+ * @head: pointer to pointer to the first node of the list
  */
 void free_listint2(listint_t **head)
 {
@@ -19,4 +17,6 @@ void free_listint2(listint_t **head)
         *head = (*head)->next;
         free(current);
     }
+
+    *head = NULL;
 }
