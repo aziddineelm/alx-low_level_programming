@@ -5,8 +5,7 @@
  * @head: pointer to the head of the listint_t list.
  * @index: index of the node, starting at 0.
  *
- * Return: pointer to the nth node of the listint_t list,
- * or NULL if the node does not exist.
+ * Return: pointer to the nth node of the listint_t list or NULL
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
